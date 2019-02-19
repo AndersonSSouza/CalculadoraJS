@@ -5,10 +5,6 @@
 </head>
 <body>
 <h1>Calculadora carinha</h1>
+<input type="button" name="" value="calcular">
 </body>
-</html> "# CalculadoraJSS" 
-GUdinho
-
-carinha
-
-echovida
+</html>
