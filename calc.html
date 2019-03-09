@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="script.js"></script>
 	<title>calc</title>
 	<style type="text/css">
 		body{
@@ -15,7 +16,7 @@
 		}
 
 		.digitado{
-			text-align: right;
+			text-align: right;""
 			font-size: 50px;
 		}
 		.botao{
@@ -27,24 +28,24 @@
 <body>
 <div class="corpo">
 <h3 class="auxiliar">resultado</h3>
-<h1 class="digitado">Calculadora </h1>
+<h1 class="digitado" id="texto1">Calculadora </h1>
 <div class="numeros">
-<input type="button" class="botao" name="" value="1">
-<input type="button" class="botao" name="" value="2">
-<input type="button" class="botao" name="" value="3">
-<input type="button" class="botao" name="" value="4">
-<input type="button" class="botao" name="" value="5">
-<input type="button" class="botao" name="" value="6">
-<input type="button" class="botao" name="" value="7">
-<input type="button" class="botao" name="" value="8">
-<input type="button" class="botao" name="" value="9">
-<input type="button" class="botao" name="" value=".">
+<input type="button" class="botao" name="" value="1" onclick="botao1()">
+<input type="button" class="botao" name="" value="2" onclick="botao2()">
+<input type="button" class="botao" name="" value="3" onclick="botao3()">
+<input type="button" class="botao" name="" value="4" onclick="botao4()">
+<input type="button" class="botao" name="" value="5" onclick="botao5()">
+<input type="button" class="botao" name="" value="6" onclick="botao6()">
+<input type="button" class="botao" name="" value="7" onclick="botao7()">
+<input type="button" class="botao" name="" value="8" onclick="botao8()">
+<input type="button" class="botao" name="" value="9" onclick="botao9()">
+<input type="button" class="botao" name="" value="." onclick="botaoponto()">
 </div>
 <input type="button" class="botao" name="" value="+">
 <input type="button" class="botao" name="" value="-">
 <input type="button" class="botao" name="" value="/">
 <input type="button" class="botao" name="" value="*">
-<input type="button" class="botao" name="" value="CCE">
+<input type="button" class="botao" name="" value="CCE" onclick="cce()">
 
 <input type="button" class="botao" name="" value="Raiz">
 <input type="button" class="botao" name="" value="%">
