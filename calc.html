@@ -3,32 +3,14 @@
 <head>
 	<script src="script.js"></script>
 	<title>calc</title>
-	<style type="text/css">
-		body{
-			padding:0;
-			margin: 0;
-			background-color: #e2ffff;
-		}
-		.corpo{
-			border: 5px solid black;
-			padding:30px;
-			margin: 50px 30px;
-		}
-
-		.digitado{
-			text-align: right;""
-			font-size: 50px;
-		}
-		.botao{
-			padding: 10px;
-			margin:5px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="calcestilo.css"></LI>
+	
 </head>
 <body>
+<h1>CALCULADORA</h1>
 <div class="corpo">
-<h3 class="auxiliar">resultado</h3>
-<h1 class="digitado" id="texto1">Calculadora </h1>
+<h3 class="auxiliar" id="tauxiliar">0</h3>
+<h1 class="digitado" id="texto1">0</h1>
 <div class="numeros">
 <input type="button" class="botao" name="" value="1" onclick="botao1()">
 <input type="button" class="botao" name="" value="2" onclick="botao2()">
@@ -39,20 +21,21 @@
 <input type="button" class="botao" name="" value="7" onclick="botao7()">
 <input type="button" class="botao" name="" value="8" onclick="botao8()">
 <input type="button" class="botao" name="" value="9" onclick="botao9()">
+<input type="button" class="botao" name="" value="0" onclick="botao0()">
 <input type="button" class="botao" name="" value="." onclick="botaoponto()">
 </div>
-<input type="button" class="botao" name="" value="+">
-<input type="button" class="botao" name="" value="-">
-<input type="button" class="botao" name="" value="/">
-<input type="button" class="botao" name="" value="*">
+<input type="button" class="botao" name="" value="+" onclick="botaosoma()">
+<input type="button" class="botao" name="" value="-" onclick="botaosub()">
+<input type="button" class="botao" name="" value="/" onclick="botaodiv()">
+<input type="button" class="botao" name="" value="*" onclick="botaomulti()">
 <input type="button" class="botao" name="" value="CCE" onclick="cce()">
-
-<input type="button" class="botao" name="" value="Raiz">
-<input type="button" class="botao" name="" value="%">
-<input type="button" class="botao" name="" value="=">
-<input type="button" class="botao" name="" value="Backspace">
+<input type="button" class="botao" name="" value="Raiz" onclick="botaoraiz()">
+<input type="button" class="botao" name="" value="%" onclick="botaoporcento()">
+<input type="button" class="botao" name="" value="=" onclick="igual()">
+<input type="button" class="botao" name="" value="Backspace" onclick="backspace()">
 
 </div>
-
+<input type="text" name="" id="resultado" value="0">
+<input type="text" name="" id="operacao" value="0">
 </body>
 </html>
