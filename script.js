@@ -1,10 +1,16 @@
 function escrever(num){
 
 	var texto =document.querySelector("#texto1")
-	if (texto.textContent == 0 ) {
-		texto.textContent = num
+	if (num == "." ){
+		if (texto.textContent.indexOf(".")== -1) {
+			texto.textContent += num
+		}
 	}else{
-		texto.textContent += num
+		if (texto.textContent == 0 ) {
+			texto.textContent = num
+		}else{
+			texto.textContent += num
+		}
 	}
 }
 
@@ -162,7 +168,7 @@ function botaoraiz(){
 	escrever(".")
 }
 function botaoporcento(){
-	escrever(".")
+
 }
 function backspace(){
 	var texto =document.querySelector("#texto1")

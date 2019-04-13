@@ -9,32 +9,44 @@
 <body>
 <h1>CALCULADORA</h1>
 <div class="corpo">
-<h3 class="auxiliar" id="tauxiliar">0</h3>
-<h1 class="digitado" id="texto1">0</h1>
-<div class="numeros">
-<input type="button" class="botao" name="" value="1" onclick="botao1()">
-<input type="button" class="botao" name="" value="2" onclick="botao2()">
-<input type="button" class="botao" name="" value="3" onclick="botao3()">
-<input type="button" class="botao" name="" value="4" onclick="botao4()">
-<input type="button" class="botao" name="" value="5" onclick="botao5()">
-<input type="button" class="botao" name="" value="6" onclick="botao6()">
-<input type="button" class="botao" name="" value="7" onclick="botao7()">
-<input type="button" class="botao" name="" value="8" onclick="botao8()">
-<input type="button" class="botao" name="" value="9" onclick="botao9()">
-<input type="button" class="botao" name="" value="0" onclick="botao0()">
-<input type="button" class="botao" name="" value="." onclick="botaoponto()">
-</div>
-<input type="button" class="botao" name="" value="+" onclick="botaosoma()">
-<input type="button" class="botao" name="" value="-" onclick="botaosub()">
-<input type="button" class="botao" name="" value="/" onclick="botaodiv()">
-<input type="button" class="botao" name="" value="*" onclick="botaomulti()">
-<input type="button" class="botao" name="" value="CCE" onclick="cce()">
-<input type="button" class="botao" name="" value="Raiz" onclick="botaoraiz()">
-<input type="button" class="botao" name="" value="%" onclick="botaoporcento()">
-<input type="button" class="botao" name="" value="=" onclick="igual()">
-<input type="button" class="botao" name="" value="Backspace" onclick="backspace()">
+	<div class="divResultados">
+		<h3 class="auxiliar" id="tauxiliar">0</h3>
+		<h1 class="digitado" id="texto1">0</h1>
+	</div>
+	<div class="grupoBotao">
+		<div class="numeros">
+			<input type="button" class="botao b1" name="" value="1" onclick="botao1()">
+			<input type="button" class="botao b2" name="" value="2" onclick="botao2()">
+			<input type="button" class="botao b3" name="" value="3" onclick="botao3()">
+			<input type="button" class="botao b4" name="" value="4" onclick="botao4()">
+			<input type="button" class="botao b5" name="" value="5" onclick="botao5()">
+			<input type="button" class="botao b6" name="" value="6" onclick="botao6()">
+			<input type="button" class="botao b7" name="" value="7" onclick="botao7()">
+			<input type="button" class="botao b8" name="" value="8" onclick="botao8()">
+			<input type="button" class="botao b9" name="" value="9" onclick="botao9()">
+			<div class="divb0">
+				<input type="button" class="botao b0" name="" value="0" onclick="botao0()">
+			</div>
+			<input type="button" class="botao bp" name="" value="." onclick="botaoponto()">
+		</div>
+		<div class="grupob1">
+			<input type="button" class="botao" name="" value="CCE" onclick="cce()">
+			<input type="button" class="botao" name="" value="Raiz" onclick="botaoraiz()">
+			<input type="button" class="botao" name="" value="%" onclick="botaoporcento()">
+			<input type="button" class="botao" name="" value="=" onclick="igual()">
+			<input type="button" class="botao" name="" value="Backspace" onclick="backspace()">
+		</div>
+		<div class="grupob2">
+			<input type="button" class="botao" name="" value="+" onclick="botaosoma()">
+			<input type="button" class="botao" name="" value="-" onclick="botaosub()">
+			<input type="button" class="botao" name="" value="/" onclick="botaodiv()">
+			<input type="button" class="botao" name="" value="*" onclick="botaomulti()">
+		</div>
+		
+	</div>	
 
 </div>
+
 <input type="text" name="" id="resultado" value="0">
 <input type="text" name="" id="operacao" value="0">
 </body>
