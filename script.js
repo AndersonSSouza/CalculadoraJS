@@ -80,7 +80,7 @@ function multiplicar(){
 	var texto = document.querySelector("#texto1")
 	var num1 = document.getElementById("resultado").value
 	var num2 = texto.textContent
-	var soma = parseInt(num1) * parseInt(num2)
+	var soma = parseFloat(num1) * parseFloat(num2)
 	return soma
 }
 
@@ -88,7 +88,7 @@ function somar(){
 	var texto = document.querySelector("#texto1")
 	var num1 = document.getElementById("resultado").value
 	var num2 = texto.textContent
-	var soma = parseInt(num1) + parseInt(num2)
+	var soma = parseFloat(num1) + parseFloat(num2)
 	return soma
 }
 
@@ -96,7 +96,7 @@ function subtrair(){
 	var texto = document.querySelector("#texto1")
 	var num1 = document.getElementById("resultado").value
 	var num2 = texto.textContent
-	var soma = parseInt(num1) - parseInt(num2)
+	var soma = parseFloat(num1) - parseFloat(num2)
 	return soma
 }
 
@@ -105,7 +105,7 @@ function dividir(){
 	
 	var num1 = document.getElementById("resultado").value
 	var num2 = texto.textContent
-	var soma = parseInt(num1) / parseInt(num2)
+	var soma = parseFloat(num1) / parseFloat(num2)
 	return soma
 
 }
@@ -184,4 +184,13 @@ function backspace(){
 }
 function igual(){
 	calcular("")
+}
+
+function botaoraiz(){
+	var texto =document.querySelector("#texto1")
+	var textoaux = document.querySelector("#tauxiliar")
+	var raizq= parseFloat(texto.textContent);
+	//alert(Math.sqrt(raizq));
+	cce();
+	textoaux.textContent = Math.sqrt(raizq)
 }

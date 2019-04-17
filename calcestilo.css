@@ -1,0 +1,112 @@
+body{
+			padding:0;
+			margin: 0;
+			background-color: #e2ffff;
+		}
+		#title{
+			font-size: 70px;
+			text-align: center;
+		}
+		.corpo{
+			border: 5px solid black;
+			padding:30px;
+			margin: 50px 30px;
+			background-color: purple;
+		}
+
+		.digitado{
+			text-align: right;
+			font-size: 45px;
+		}
+		.botao{
+			/*padding: 10px;*/
+			/*margin:5px;*/
+		}
+		.divResultados{
+			border: 5px solid black ;
+			padding: 10px;
+			background-color: gray;
+			color: white;
+		}
+
+		.grupoBotao{
+			display: grid;
+			grid-template-rows: 40px;
+			grid-template-columns: 25% 25% 25% 25%;
+			grid-template-areas: "grupob1 grupob1 grupob1 grupob2" "numeros numeros numeros grupob2" "numeros numeros numeros grupob2" "numeros numeros numeros grupob2";
+		}
+		.numeros{
+			grid-area: numeros;
+			border: 4px solid black ;
+			display: grid;
+			grid-template-rows: 50px 50px 50px 50px;
+			grid-template-areas:"b7 b8 b9" "b4 b5 b6" "b1 b2 b3" "divb0 divb0 bp";
+
+		}
+
+		.b1{
+			grid-area: b1;
+		}
+		.b2{
+			grid-area: b2;
+		}
+		.b3{
+			grid-area: b3;
+		}
+		.b4{
+			grid-area: b4;
+		}
+		.b5{
+			grid-area: b5;
+		}
+		.b6{
+			grid-area: b6;
+		}
+		.b7{
+			grid-area: b7;
+		}
+		.b8{
+			grid-area: b8;
+		}
+		.b9{
+			grid-area: b9;
+		}
+		.divb0{
+			grid-area: divb0;
+		}
+		.bp{
+			grid-area: bp;
+		}
+		.grupob1{
+			grid-area: grupob1;
+			background-color: black;
+			border: 2px solid black;
+			border-left: 4px solid black;
+			
+		}
+		.grupob1 input{
+			width: 32%;
+			height: 100%;
+			margin-left: 0px;
+			margin-right: 0px;
+			
+		}
+		.grupob2{
+			grid-area: grupob2;
+			background: yellow;
+			border:4px solid black;
+		}
+		.grupob2 input{
+			width: 100%;
+			height: 20%;
+			
+		}
+		
+		.bp{
+			grid-area: bp;
+		}
+
+		.b0{
+			width: 100%;
+			height: 100%;
+		}
